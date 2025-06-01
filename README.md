@@ -1,47 +1,52 @@
-# Haiku Daily
+# Haiku Daily App
 
-A beautiful, minimalist Android app that delivers a daily haiku at your chosen time. Each haiku is uniquely generated using AI, focusing on themes of nature, love, sea, forest, soul, and body.
+A beautiful React Native app that displays a new haiku every day, with a clean and modern UI.
 
 ## Features
 
-- Daily AI-generated haikus
-- Customizable notification time
-- Daily reminders
-- Clean, minimalist design
-- Smooth animations
-- Automatic dark/light mode support
+- Daily haiku updates
+- Beautiful animations
+- Modern UI design
+- Dark mode support
 
-## Technical Details
+## Getting Started
 
-- Built with React Native and Expo
-- Uses Groq API for haiku generation
-- Implements local notifications for daily reminders
-- Stores user preferences and haikus locally
+### Prerequisites
 
-## Setup
+- Node.js
+- npm or yarn
+- Expo Go app on your mobile device
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
+### Installation
 
-2. Start the development server:
-   ```bash
-   npx expo start
-   ```
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/haiku-app.git
+cd haiku-app
+```
 
-3. Build for Android:
-   ```bash
-   npx eas build -p android --profile preview
-   ```
+2. Install dependencies:
+```bash
+npm install
+```
+
+Note: The `node_modules` directory is not included in the repository as it contains Expo dependencies that are automatically installed when you run `npm install`. These dependencies are required to run the app with Expo.
+
+3. Start the development server:
+```bash
+npx expo start
+```
+
+4. Scan the QR code with Expo Go (Android) or the Camera app (iOS)
 
 ## Development
 
-- `app/` - Main application code
-- `assets/` - Images and fonts
-- `app.json` - App configuration
-- `eas.json` - Build configuration
+The app is built with:
+- React Native
+- Expo
+- TypeScript
+- React Navigation
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the LICENSE file for details.
