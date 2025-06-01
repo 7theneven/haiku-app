@@ -1,22 +1,25 @@
 {
   "expo": {
-    "name": "haiku-app",
+    "name": "Haiku Daily",
     "slug": "haiku-app",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "haikuapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.haikuapp"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.haikuapp",
+      "versionCode": 1
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +40,31 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "fonts": [
+      {
+        "asset": "./assets/fonts/AvenirLTStd-Light.otf",
+        "family": "AvenirLTStd-Light"
+      },
+      {
+        "asset": "./assets/fonts/AvenirLTStd-Medium.otf",
+        "family": "AvenirLTStd-Medium"
+      },
+      {
+        "asset": "./assets/fonts/AvenirLTStd-Roman.otf",
+        "family": "AvenirLTStd-Roman"
+      }
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "ae8b6237-3198-4e9d-96f8-6eab4b391936"
+      }
+    },
+    "notification": {
+      "icon": "./assets/images/icon.png",
+      "color": "#ffffff",
+      "iosDisplayInForeground": true
     }
   }
 }
